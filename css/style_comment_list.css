@@ -1,0 +1,11 @@
+#group_image_area{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+#comment{
+    height: 50px;
+    width: 50%;
+}

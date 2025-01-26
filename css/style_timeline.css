@@ -1,0 +1,129 @@
+
+#tweet_area {
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+#tweet {
+    width: 52%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+#send_btn_area {
+    margin-left: 40%;
+}
+
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.tweet-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.tweet-content {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+/* ツイート部の時間表示 */
+.tweet-time {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    display: block;
+}
+
+/* ツイート部のミートボールメニュー */
+.meatball {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 95%;
+}
+  
+  .meatball-ball {
+    display: block;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  .meatball-ball:nth-child(1) {
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  
+  .meatball-ball:nth-child(2) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .meatball-ball:nth-child(3) {
+    left: 100%;
+    transform: translate( -100%,-50%);
+  }
+  /* リセットCSS */
+  button {
+    border-color: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+
+ /* メニューコンテナの初期状態 */
+.menu-container {
+    position: fixed;
+    bottom: -100%; /* 初期状態は画面外 */
+    width: 50%;
+    background-color:#333333;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.3s ease; /* アニメーション */
+    z-index: 1000;
+
+}
+
+/* メニュー表示時 */
+.menu-container.active {
+    bottom: 0; /* 画面内に表示 */
+}
+
+/* メニューのスタイル */
+
+.submenu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.submenu ul li {
+    margin: 10px 0;
+    color: white;
+
+}
+
+.submenu ul li a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
